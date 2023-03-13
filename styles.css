@@ -1,10 +1,344 @@
-header
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-BlackItalic.eot');
+    src: local('Formular Black Italic'), local('Formular-BlackItalic'),
+      url('../fonts/Formular/Formular-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-BlackItalic.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-BlackItalic.woff') format('woff'),
+      url('../fonts/Formular/Formular-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-MediumItalic.eot');
+    src: local('Formular Medium Italic'), local('Formular-MediumItalic'),
+      url('../fonts/Formular/Formular-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-MediumItalic.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-MediumItalic.woff') format('woff'),
+      url('../fonts/Formular/Formular-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-Italic.eot');
+    src: local('Formular Italic'), local('Formular-Italic'),
+      url('../fonts/Formular/Formular-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-Italic.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-Italic.woff') format('woff'),
+      url('../fonts/Formular/Formular-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-LightItalic.eot');
+    src: local('Formular Light Italic'), local('Formular-LightItalic'),
+      url('../fonts/Formular/Formular-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-LightItalic.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-LightItalic.woff') format('woff'),
+      url('../fonts/Formular/Formular-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-Black.eot');
+    src: local('Formular Black'), local('Formular-Black'),
+      url('../fonts/Formular/Formular-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-Black.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-Black.woff') format('woff'),
+      url('../fonts/Formular/Formular-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-Light.eot');
+    src: local('Formular Light'), local('Formular-Light'),
+      url('../fonts/Formular/Formular-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-Light.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-Light.woff') format('woff'),
+      url('../fonts/Formular/Formular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular.eot');
+    src: local('Formular'), url('../fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular.woff2') format('woff2'),
+      url('../fonts/Formular/Formular.woff') format('woff'),
+      url('../fonts/Formular/Formular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-Medium.eot');
+    src: local('Formular Medium'), local('Formular-Medium'),
+      url('../fonts/Formular/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-Medium.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-Medium.woff') format('woff'),
+      url('../fonts/Formular/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-BoldItalic.eot');
+    src: local('Formular Bold Italic'), local('Formular-BoldItalic'),
+      url('../fonts/Formular/Formular-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-BoldItalic.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-BoldItalic.woff') format('woff'),
+      url('../fonts/Formular/Formular-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular/Formular-Bold.eot');
+    src: local('Formular Bold'), local('Formular-Bold'),
+      url('../fonts/Formular/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Formular/Formular-Bold.woff2') format('woff2'),
+      url('../fonts/Formular/Formular-Bold.woff') format('woff'),
+      url('../fonts/Formular/Formular-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Thin.eot');
+    src: local('Geometria Thin'), local('Geometria-Thin'),
+      url('../fonts/Geometria/Geometria-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Thin.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-MediumItalic.eot');
+    src: local('Geometria MediumItalic'), local('Geometria-MediumItalic'),
+      url('../fonts/Geometria/Geometria-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-MediumItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Italic.eot');
+    src: local('Geometria Italic'), local('Geometria-Italic'),
+      url('../fonts/Geometria/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Italic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Heavy.eot');
+    src: local('Geometria Heavy'), local('Geometria-Heavy'),
+      url('../fonts/Geometria/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Heavy.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-ExtraBoldItalic.eot');
+    src: local('Geometria ExtraBoldItalic'), local('Geometria-ExtraBoldItalic'),
+      url('../fonts/Geometria/Geometria-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-ExtraBoldItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Medium.eot');
+    src: local('Geometria Medium'), local('Geometria-Medium'),
+      url('../fonts/Geometria/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Medium.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-BoldItalic.eot');
+    src: local('Geometria BoldItalic'), local('Geometria-BoldItalic'),
+      url('../fonts/Geometria/Geometria-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-BoldItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-LightItalic.eot');
+    src: local('Geometria LightItalic'), local('Geometria-LightItalic'),
+      url('../fonts/Geometria/Geometria-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-LightItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-HeavyItalic.eot');
+    src: local('Geometria HeavyItalic'), local('Geometria-HeavyItalic'),
+      url('../fonts/Geometria/Geometria-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-HeavyItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria.eot');
+    src: local('Geometria'),
+      url('../fonts/Geometria/Geometria.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria.woff') format('woff'),
+      url('../fonts/Geometria/Geometria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Bold.eot');
+    src: local('Geometria Bold'), local('Geometria-Bold'),
+      url('../fonts/Geometria/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Bold.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-ExtraBold.eot');
+    src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+      url('../fonts/Geometria/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-ExtraBold.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-ThinItalic.eot');
+    src: local('Geometria ThinItalic'), local('Geometria-ThinItalic'),
+      url('../fonts/Geometria/Geometria-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-ThinItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-ExtraLightItalic.eot');
+    src: local('Geometria ExtraLightItalic'), local('Geometria-ExtraLightItalic'),
+      url('../fonts/Geometria/Geometria-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-ExtraLightItalic.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-Light.eot');
+    src: local('Geometria Light'), local('Geometria-Light'),
+      url('../fonts/Geometria/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-Light.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria-ExtraLight.eot');
+    src: local('Geometria ExtraLight'), local('Geometria-ExtraLight'),
+      url('../fonts/Geometria/Geometria-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Geometria/Geometria-ExtraLight.woff') format('woff'),
+      url('../fonts/Geometria/Geometria-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  :root {
+    --white: white;
+    --light-gray: #F7F7F7;
+    --medium-gray: #D9D9D9;
+    --dark-gray: #909090;
+    --blue: #012DE7;
+    --black: #282828;
+  
+    --Formular: 'Formular', Arial, serif;
+    --Geometria: 'Geometria', Arial, serif;
+  }
+
 body{
-    background: #fefefe;
+    font-family: var(--Geometria);
+    line-height: 115%;
+    color: var(--black);
 }
 .header{
     background-color: #fff;
-    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 5%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 7px 0px;
     transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
     -o-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
     -ms-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
@@ -22,7 +356,7 @@ body{
     display: block;
     width: 231px;
     height: 92px;
-    background: url(/images/xber/logo.png) no-repeat;
+    background: url(/images/logo.png) no-repeat;
     text-indent: -9999999px;
     overflow: hidden;
 }
@@ -51,97 +385,132 @@ body{
     width: 30px;
     background: #000;
     box-shadow: 0 -14px #000, 0 -7px #000;
+    height: 2px;
+    border: none;
 }
 .menu-holder{
-    opacity: 0;
+    display: block;
     animation: fadeIn 0.3s forwards;
 }
-/*slider*/
-.slider{
-    max-width: 1170px;
+/*section head*/
+.head{
+    background: #f7f7f7;
 }
-/** Swiper styles **/
-:root {
-    --swiper-pagination-color: rgba(255, 255, 255, 1);
-    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 1);
-  }
-
-  .swiper {
-    user-select: none;
+.head__wrapper{
     box-sizing: border-box;
-    overflow: hidden;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+    width: 1200px;
+    background: url(/images/man.png) no-repeat right bottom;
+    background-size: 45%;
+    min-height: calc(100vh - 92px);
+}
+.head__title{
+    line-height: 115%;
+    margin: 0 0 50px;
+    font-size: 64px;
+    max-width: 554px;
+}
+
+.button__blue {
+    max-width: fit-content;
+    display: block;
+    padding: 20px 45px;
     width: 100%;
-
-    height: 480px;
-
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-
-    border-radius: 0px;
-  }
-
-  .swiper-slide-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-    padding: 48px 48px;
-
-    align-items: flex-start;
-    justify-content: flex-end;
-
-    transform: translate3d(0, 0, 0);
-  }
-
-  .swiper-slide-title {
-    font-size: 21px;
+    background-color: var(--blue);
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-family: var(--Formular);
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    transition: .3s ease;
+    cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .swiper-slide-text {
-    max-width: 640px;
-    font-size: 14px;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .swiper-slide-title + .swiper-slide-text {
-    margin-top: 8px;
-  }
-
-  .swiper-slide-image {
+}
+.button__blue:hover, .button__blue:focus {
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    outline: 0;
+    color: var(--blue);
+}
+.head__button{
+    margin-bottom: 58px;
+    background: rgb(1,45,231);
+    background: linear-gradient(90deg, rgba(1,45,231,1) 0%, rgba(58,96,255,1) 100%);
+}
+.head__subtitle{
     position: absolute;
-    object-fit: cover;
+    max-width: 554px;
+    font-size: 1.7rem;
+    line-height: 130%;
+    padding: 0;
+    margin: 0 0 40px;
+}
+.head__graph-wrapper{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    gap: 30px;
+}
+.head__graph-column{
+    margin-top: 30px;
+    width: 300px;
+    height: 170px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 7px 0px;
+    transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
+    -o-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out,box-shadow .3s ease-in-out, padding .3s ease-in-out;
+    transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.head__graph-column:hover{
+    padding-bottom: 30px;
+    margin-top: 0;
+    transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 0.5s;
 
-    left: -10%;
-    top: -10%;
-    width: 120%;
-    height: 120%;
+}
+.head__graph-title{
+    font-weight: 500;
+    font-size: 25px;
+}
+.head__graph-subtitle{
+    color: var(--dark-gray);
+    font-size: 18px;
+}
+/*section head end*/
 
-    z-index: 0;
-  }
+/*vertical media*/
+@media (max-height: 900px){
+    .head__wrapper{
+        background-size: 38%;
+    }
+}
+@media (max-height: 800px){
+    .head__wrapper{
+        background: url(/images/man.png) no-repeat right 50px bottom;
+        background-size: 33%;
+    }
+}
+/*vertical media end*/
 
- @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
 @media (max-width: 1200px){
     .header__wrapper,.slider{
         padding: 0 15px;
@@ -152,7 +521,7 @@ body{
         padding: 0 15px;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 940px){
     .mobile-burger{
         display: block;
     }
@@ -175,6 +544,6 @@ body{
         display: block;
         height: 45px;
         line-height:45px;
-        font-size: 1.3rem
+        font-size: 1.1rem
     }
 }
