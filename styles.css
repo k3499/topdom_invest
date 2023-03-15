@@ -392,15 +392,18 @@ body{
     display: block;
     animation: fadeIn 0.3s forwards;
 }
-/*section head*/
+/*section head start*/
 .head{
     background: #f7f7f7;
 }
-.head__wrapper{
+.wrapper{
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
     width: 1200px;
+    min-height: 100vh;
+}
+.head__wrapper{
     background: url(/images/man.png) no-repeat right bottom;
     background-size: 45%;
     min-height: calc(100vh - 92px);
@@ -432,10 +435,9 @@ body{
     font-weight: bold;
 }
 .button__blue:hover, .button__blue:focus {
-    background-color: var(--white);
+    background: linear-gradient(90deg, rgba(1,45,231,1) 50%, rgba(58,96,255,1) 100%);
     border: 1px solid var(--blue);
     outline: 0;
-    color: var(--blue);
 }
 .head__button{
     margin-bottom: 58px;
@@ -497,6 +499,152 @@ body{
 }
 /*section head end*/
 
+/*section about start*/
+.about{
+    background: #fff;
+}
+.about__wrapper{
+ 
+}
+.about__block{
+    display: flex;
+    gap:30px;
+}
+.about__left-block{
+    width: 50%;
+}
+.title{
+    font-size: 42px;
+    margin: 7px 0 30px;
+    padding: 0;
+}
+.subtitle{
+    font-size: 25px;
+    line-height: 1;
+    margin: 0 0 90px; 
+}
+.about__right-block{
+    width: 50%;
+}
+.about__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about__list-item{
+    line-height: 35px;
+    height: 35px;
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    border-left: 7px solid var(--blue);
+}
+.about__list-item:last-of-type{
+    margin-bottom: 0;
+}
+.about__list-item strong{
+    font-size: 1.7rem;
+}
+
+/*section city start*/
+.city{
+    background: var(--light-gray);
+}
+.city__block{
+    display: flex;
+    gap:30px;
+}
+.city__left-block{
+    width: 57%;
+}
+.city__right-block{
+    width: 57%;
+    position: relative;
+}
+.city__subtitle{
+    margin: 0 0 50px;
+}
+.city__round-img{
+    background: url(/images/round.png) no-repeat;
+    background-size: 180px;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: -90px;
+    top:-20px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 10s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+.city__list{
+    list-style: none;
+    padding: 0;
+    margin: 60px 75px;
+}
+.city__list li{
+    font-size: 2rem;
+    line-height: 180%;
+}
+.city__list li::before{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;
+    content: "\f00c";
+    color: var(--blue)
+}
 /*vertical media*/
 @media (max-height: 900px){
     .head__wrapper{

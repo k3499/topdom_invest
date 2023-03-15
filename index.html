@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="normalize.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
+    <link href="/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/css/solid.min.css" rel="stylesheet">
     <title>Инвестиции в поселок. До 30% годовых</title>
   </head>
   <body>
@@ -25,8 +27,9 @@
         </nav>
       </div>
     </header>
+    <!--section head start-->
     <section class="head">
-      <div class="head__wrapper">
+      <div class="wrapper head__wrapper">
         <h1 class="head__title">Инвестиции в недвижимость вместе с ТопДом</h1>
         <a href="#consultation" class="head__button button__blue">Получить консультацию</a>
         <p class="head__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque consequuntur mollitia aperiam alias veritatis.</p>
@@ -55,8 +58,61 @@
         </div>
       </div>
     </section>
-   
+    <!--section head end-->
+    <!--section about start-->
+    <section class="about">
+      <div class="wrapper about__wrapper">
+        <h2 class="title">О компании ТопДом</h2>
+        <p class="subtitle">Компания занимается строительством загородных домов уже больше 12 лет и за это время накопила огромный опыт возведения частной недвижимости.</p>
+        <div class="about__block">
+          <div class="about__left-block">
+            <ul class="about__list">
+              <li class="about__list-item"><strong>5</strong> поселков</li>
+              <li class="about__list-item"><strong>800+</strong> построеных домов</li>
+              <li class="about__list-item"><strong>12</strong> лет в бизнесе</li>
+              <li class="about__list-item"><strong>35%</strong> средне-годовая доходность</li>
+              <li class="about__list-item"><strong>1.5млрд</strong> рублей в управляющей компании</li>
+              <li class="about__list-item"><strong>900м</strong> капитал ТопДом</li>
+              <li class="about__list-item"><strong>7</strong> офисов по россии</li>
+              <li class="about__list-item">Свой завод по производству </li>
+            </ul>
+          </div>
+          <div class="about__right-block">
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+              <img width="100%" src="/images/video.jpg" style="cursor:pointer" />
+            </div>
+          <div style="display:none">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/NskXhNnJOUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay=1></iframe>
+          </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <!--section about end-->
     </div>
+     <!--section city start-->
+     <section class="city">
+      <div class="wrapper about__wrapper">
+        <h2 class="title">Поселки в собственности</h2>
+        <p class="subtitle city__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia, omnis suscipit sit tempora excepturi, facilis pariatur iure aliquam nemo nam ut. Sint consequuntur laborum, ipsum expedita earum accusantium.</p>
+        <div class="city__block">
+          <div class="city__left-block">
+            <ul class="city__list">
+              <li> Казань 4</li>
+              <li> Ривьера</li>
+              <li> Казань 4</li>
+              <li> Наследие</li>
+              <li> Новая Рига</li>
+            </ul>
+          </div>
+          <div class="city__right-block">
+            <div class="city__round-img"></div>
+            <img width="100%" src="/images/poselok.jpg" style="cursor:pointer" />
+          </div>
+        </div>
+      </div>
+      </section>
+     <!--section city end-->
     <script src="/js/mobilemenu.js"></script>
   </body>
 </html>
