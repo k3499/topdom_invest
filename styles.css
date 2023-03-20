@@ -722,6 +722,17 @@ body {
   width: 100%;
   min-height: auto;
 }
+.smi__swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+
+  height: 496px;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 /** Swiper styles **/
 /* :root {
@@ -1097,9 +1108,35 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .header__wrapper,
-  .slider {
-    padding: 0 15px;
+  .wrapper{
+    padding: 150px 25px 0;
+  }
+  .footer{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .head__title {
+    line-height: 107%;
+    margin: 0 0 40px;
+  }
+  .head__subtitle {
+    font-size: 1.6rem;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .about__wrapper, .wrapper__smi, 
+  .wrapper__projects, .team__wrapper{
+    padding: 100px 25px 0;
+  }
+  .city__list li {
+    font-size: 1.9rem;
+  }
+  .projects__article-title {
+    font-size: 1.35rem;
+  }
+  .projects__article-subtitle {
+    font-size: 1rem;
   }
 }
 @media (max-width: 1200px) {
