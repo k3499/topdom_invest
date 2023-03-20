@@ -938,6 +938,145 @@ body {
   height: 100%;
   z-index: 0;
 }
+/* section team start*/
+
+/*section social start*/
+.social__wrapper{
+  padding: 150px 0 0 0;
+  min-height: 80vh;
+}
+.social{
+  background: #f7f7f7;
+}
+.social__title{
+  margin-bottom: 65px;
+}
+.social__block{
+  display: flex;
+  gap: 20px;
+}
+.social__link{
+  width: 20%;
+  height: 355px;
+  position: relative;
+}
+.social__logo{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+}
+.youtube-logo{
+  background: url(/images/youtube-logo.png) no-repeat;
+  background-size: contain;
+}
+.tg-logo{
+  background: url(/images/telegram.png) no-repeat;
+  background-size: contain;
+}
+.vk-logo{
+  background: url(/images/vk.png) no-repeat;
+  background-size: contain;
+}
+.inst-logo{
+  background: url(/images/inst.png) no-repeat;
+  background-size: contain;
+}
+.topdom-logo{
+  background: url(/images/home.png) no-repeat;
+  background-size: contain;
+}
+.social__stats{
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.social__stats li{
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.youtube{
+  background-image:
+  linear-gradient(to top, rgb(148, 20, 20), rgba(190, 20, 20, 0.582)),
+  url(/images/youtube.PNG);
+  background-size: contain;
+}
+.tg{
+  background-image:
+  linear-gradient(to top, rgb(0, 136, 204), rgba(0, 136, 204, 0.682)),
+  url(/images/tg.jpg);
+  background-size: contain;
+}
+.vk{
+  background-image:
+  linear-gradient(to top, rgb(0, 119, 255), rgba(0, 119, 255, 0.658)),
+  url(/images/vkontakte.jpg);
+  background-size: contain;
+}
+.inst{
+  background-image:
+  linear-gradient(to top, rgb(253, 59, 59), rgba(227, 67, 121, 0.858), rgba(189, 75, 139, 0.858), rgba(131, 58, 180, 0.858), rgba(88, 81, 219, 0.758), rgba(64, 93, 230, 0.758)),
+  url(/images/instagram.jpg);
+  background-size: contain;
+}
+.topdom{
+  background-image:
+  linear-gradient(to top, var(--blue), rgba(0, 119, 255, 0.658)),
+  url(/images/topdom.jpg);
+  background-size: contain;
+}
+.youtube:hover .social__stats, .youtube:hover .youtube-logo, 
+.tg:hover .social__stats, .tg:hover .tg-logo,
+.vk:hover .social__stats, .vk:hover .vk-logo,
+.inst:hover .social__stats, .inst:hover .inst-logo,
+.topdom:hover .social__stats, .topdom:hover .topdom-logo{
+  display: none;
+}
+.youtube:hover{
+  background-image:
+  linear-gradient(to top, rgba(148, 20, 20, 0), rgba(190, 20, 20, 0)),
+  url(/images/youtube.PNG);
+}
+.tg:hover{
+  background-image:
+  linear-gradient(to top, rgba(148, 20, 20, 0), rgba(190, 20, 20, 0)),
+  url(/images/tg.jpg);
+}
+.vk:hover{
+  background-image:
+  linear-gradient(to top, rgba(148, 20, 20, 0), rgba(190, 20, 20, 0)),
+  url(/images/vkontakte.jpg);
+}
+.inst:hover{
+  background-image:
+  linear-gradient(to top, rgba(148, 20, 20, 0), rgba(190, 20, 20, 0)),
+  url(/images/instagram.jpg);
+}
+.topdom:hover{
+  background-image:
+  linear-gradient(to top, rgba(148, 20, 20, 0), rgba(190, 20, 20, 0)),
+  url(/images/topdom.jpg);
+}
+.footer{
+  background-color: #272a30;
+  color: #a8b0b5;
+}
+.footer__wrapper{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  width: 1200px;
+  min-height: 15vh;
+}
 /*vertical media*/
 @media (max-height: 900px) {
   .head__wrapper {
@@ -952,6 +1091,11 @@ body {
 }
 /*vertical media end*/
 
+@media (max-height: 885px){
+  .wrapper{
+    min-height: 1000px;
+  }
+}
 @media (max-width: 1200px) {
   .header__wrapper,
   .slider {
