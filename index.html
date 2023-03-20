@@ -42,6 +42,19 @@
       background-color: rgba(51, 51, 51, 1);
       border-radius: 0px;
     }
+    .teamAdmin__swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        background-color: rgba(51, 51, 51, 1);
+        border-radius: 0px;
+    }
   </style>
   </head>
   <body>
@@ -292,6 +305,52 @@
             <span>Ген. Директор</span>
           </div>
         </div>
+        <div class="swiper teamAdmin__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="team__admin-item">
+                <img src="/images/gendir.jpg" class="team__admin-img" alt="" />
+                <p class="team__admin-title">Балашников Игорь</p>
+                <span>Ген. Директор</span>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div class="team__admin-item">
+                <img src="/images/emil.jpg" class="team__admin-img" alt="" />
+                <p class="team__admin-title">Балашников Эмиль</p>
+                <span>Ген. Директор</span>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div class="team__admin-item">
+                <img src="/images/gendir.jpg" class="team__admin-img" alt="" />
+                <p class="team__admin-title">Востриков Евгений</p>
+                <span>Руководитель отдела продаж</span>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div class="team__admin-item">
+                <img src="/images/andrei.jpg" class="team__admin-img" alt="" />
+                <p class="team__admin-title">Андрей Обрусный</p>
+                <span>Ген. Директор</span>
+              </div>
+            </div>
+    
+            <div class="swiper-slide ">
+              <div class="team__admin-item">
+                <img src="/images/gendir.jpg" class="team__admin-img" alt="" />
+                <p class="team__admin-title">Балашников Игорь</p>
+                <span>Ген. Директор</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="swiper-button-prev teama__swiper-button-prev"></div>
+          <div class="swiper-button-next teama__swiper-button-next"></div>
+        </div>
         <div class="team__worker-wrap">
           <div class="slider">
             <div class="swiper team__swiper">
@@ -442,6 +501,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!--section team end-->
 
@@ -498,6 +558,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
+       
       var swiper1 = new Swiper(".smi__swiper", {
         slidesPerView: 3,
         spaceBetween: 25,
@@ -506,6 +567,17 @@
           prevEl: ".smi__swiper-button-prev",
           nextEl: ".smi__swiper-button-next",
         },
+        breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        780: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      }
       });
 
       var swiper2 = new Swiper(".team__swiper", {
@@ -518,7 +590,27 @@
           nextEl: ".team__swiper-button-next",
         },
         lazy: { enabled: true },
+        breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        780: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      }
       });
+
+      var swiper3 = new Swiper(".teamAdmin__swiper", {
+        loop: true, 
+        navigation: {
+          prevEl: ".teama__swiper-button-prev",
+          nextEl: ".teama__swiper-button-next",
+        },
+       });
+
     </script>
   </body>
 </html>
