@@ -10,7 +10,7 @@ Array.from(spoilersLinkArr).forEach(link => {
         const spoiler = e.target.closest('.answer__item').querySelector('.spoiler'); 
         //получаем сосдений элемент со спойлером
         if (sliderStatus === 0){
-            console.log('0')
+            //спойлер открывается
             setTimeout(() => {
                 spoiler.classList.remove('fadeOut');
                 spoiler.classList.add('fadeIn');
@@ -19,7 +19,7 @@ Array.from(spoilersLinkArr).forEach(link => {
             spoiler.style.height = 'fit-content';
             sliderStatus = 1;
         }else if(sliderStatus === 1){
-            console.log('1')
+            //спойлер закрывается
             setTimeout(() => {
                 spoiler.style.display = 'none';
             }, 550);
@@ -29,26 +29,3 @@ Array.from(spoilersLinkArr).forEach(link => {
         }
     });
 });
-
-    // spoilerLink.addEventListener('click', (evt) =>{
-    //     evt.preventDefault();
-        
-    //     if (spoilerStatus === 0){
-    //         setTimeout(() => {
-    //             spoiler.classList.remove('fadeOut');
-    //             spoiler.classList.add('fadeIn');
-    //         }, 50);
-    //         spoiler.style.display = 'block';
-    //         spoiler.style.height = 'fit-content';
-    //         spoilerStatus = 1;
-    //     }else if(spoilerStatus === 1){
-    //         setTimeout(() => {
-    //             spoiler.style.display = 'none';
-    //         }, 550);
-    //         spoilerStatus = 0;
-    //         spoiler.classList.remove('fadeIn');
-    //         spoiler.classList.add('fadeOut');
-    //     }
-    //     console.log(spoiler)
-    // console.log(link)
-    // })

@@ -957,7 +957,7 @@ body {
 
 /*section social start*/
 .social__wrapper{
-  padding: 150px 0 0 0;
+  padding: 150px 0 0 50px;
   min-height: 80vh;
 }
 .social{
@@ -1121,6 +1121,11 @@ body {
   width: 100%;
   margin-bottom: 13px;
 }
+.spoiler p{
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+}
 .answer__item-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -1184,6 +1189,7 @@ body {
   }
 } */
 @media (max-width: 1200px) {
+
   .wrapper{
     padding: 150px 25px 0;
   }
@@ -1203,7 +1209,7 @@ body {
   }
   .about__wrapper, .wrapper__smi, 
   .wrapper__projects, .team__wrapper{
-    padding: 100px 25px 0;
+    padding: 100px 25px 40px;
   }
   .city__list li {
     font-size: 1.9rem;
@@ -1213,6 +1219,10 @@ body {
   }
   .projects__article-subtitle {
     font-size: 1rem;
+  }
+  .answer__wrapper {
+    padding: 50px 0 50px;
+    min-height: auto;
   }
 }
 @media (max-width: 1050px) {
@@ -1345,7 +1355,7 @@ body {
 @media (max-width: 640px) {
   .head__title {
     font-size: 26px;
-    margin: 60px 0 40px;
+    margin: 60px 0 25px;
   }
   .button__blue {
     padding: 13px;
@@ -1354,13 +1364,17 @@ body {
   }
   .head__button {
     margin-bottom: 16px;
+    order: 4;
   }
   .head__subtitle {
     font-size: 1rem;
-    margin: 0 0 23px;
+    margin: 16px 0 23px;
+    order: 3;
   }
   .head__wrapper {
     background: none;
+    display: flex;
+    flex-direction: column;
   }
   .wrapper {
     min-height: calc(100vh - 55px);
@@ -1453,5 +1467,57 @@ body {
   }
   .team__swiper{
     height: 195px;
+  }
+  .social__block {
+    flex-direction: column;
+  }
+  .social__link {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .social__stats{
+    position: static;
+    transform: none;
+  }
+  .social__stats li {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    text-align: left;
+}
+  .topdom, .topdom:hover {
+    background: #264ae3;
+  }
+  .youtube, .youtube:hover {
+    background: #c4302b;
+  }
+  .tg, .tg:hover {
+    background: #0088cc;
+  }
+  .inst, .inst:hover {
+    background: linear-gradient(180deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+  .vk, .vk:hover {
+    background: #0077ff;
+  }
+  .youtube:hover .social__stats, .youtube:hover .youtube-logo, 
+  .tg:hover .social__stats, .tg:hover .tg-logo,
+  .vk:hover .social__stats, .vk:hover .vk-logo,
+  .inst:hover .social__stats, .inst:hover .inst-logo,
+  .topdom:hover .social__stats, .topdom:hover .topdom-logo{
+    display: block;
+    width: 50%;
+    position: static;
+    transform: none;
+  }
+  .social__logo {
+    position: static;
+    transform: none;
   }
 }
