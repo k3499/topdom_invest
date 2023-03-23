@@ -1520,4 +1520,20 @@ body {
     position: static;
     transform: none;
   }
+  .answer__item-wrapper {
+    flex-direction: column;
+  }
+  .answer__item {
+    width: 100%;
+  }
+  .header__logo{
+    height: 63px;
+    background-size: 64%;
+  }
+  .mobile-burger{
+    margin-top: 9px;
+  }
+  .answer__subtitle {
+    text-align: left;
+}
 }
