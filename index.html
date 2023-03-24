@@ -7,6 +7,7 @@
     <link href="normalize.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
     <link href="/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/css/brands.min.css" rel="stylesheet" />
     <link href="/css/solid.min.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -223,66 +224,99 @@
       <div class="swiper smi__swiper">
         <div class="swiper-wrapper">
           <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/01.jpg"
-            />
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <img
+                width="100%"
+                src="/images/efir.jpg"
+                style="cursor: pointer"
+              />
+            </div>
+            <div style="display: none" class="swiper-slide-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/NskXhNnJOUE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                autoplay="1"
+              ></iframe>
+            </div>
           </div>
 
           <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
-            />
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <img
+                width="100%"
+                src="/images/rustv.jpg"
+                style="cursor: pointer"
+              />
+            </div>
+            <div style="display: none" class="swiper-slide-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/NskXhNnJOUE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                autoplay="1"
+              ></iframe>
+            </div>
           </div>
 
           <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/03.jpg"
-            />
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <img
+                width="100%"
+                src="/images/abdul.jpg"
+                style="cursor: pointer"
+              />
+            </div>
+            <div style="display: none" class="swiper-slide-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/NskXhNnJOUE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                autoplay="1"
+              ></iframe>
+            </div>
           </div>
 
           <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/04.jpg"
-            />
-          </div>
-
-          <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/05.jpg"
-            />
-          </div>
-
-          <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/06.jpg"
-            />
-          </div>
-
-          <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/07.jpg"
-            />
-          </div>
-
-          <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/08.jpg"
-            />
-          </div>
-
-          <div class="smi__swiper-slide swiper-slide">
-            <img
-              class="swiper-slide-image"
-              src="https://studio.swiperjs.com/demo-images/nature/09.jpg"
-            />
+            <div
+              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
+            >
+              <img
+                width="100%"
+                src="/images/pyan.jpg"
+                style="cursor: pointer"
+              />
+            </div>
+            <div style="display: none" class="swiper-slide-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/NskXhNnJOUE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                autoplay="1"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="smi__swiper-button-prev swiper-button-prev"></div>
@@ -759,11 +793,99 @@
       </div>
     </section>
     <!--section social end-->
+
+    <!--section form start-->
+    <section class="form">
+      <div class="wrapper form__wrapper">
+        <div class="form__head">
+          <div class="form__contact-data">
+            <h3 class="form__title">Контактные данные</h3>
+            <div class="form__cont-data">
+              <div class="form__cont-data-img"></div>
+              <div class="form__cont-data-wrap">
+                <span>Телефон</span>
+                <p>+7 800 600 07 87</p>
+              </div>
+            </div>
+            <div class="form__cont-data">
+              <div class="form__cont-data-img"></div>
+              <div class="form__cont-data-wrap">
+                <span>Месенджеры</span>
+                <ul class="form__cont-social">
+                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-vk"></i></a></li>
+                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__cont-data">
+              <div class="form__cont-data-img"></div>
+              <div class="form__cont-data-wrap">
+                <span>Адреса офисов</span>
+                <p>г. Москва, Пресненская набережная, 8с1</p>
+                <p>г. Казань, ул. Ризаэтдина Фахретдина, д. 19 (Казанская усадьба)</p>
+                <p>г. Санкт - Петербург, бизнес - центр Обводный, Набережная Обводного канала 92 лит А, Офис 101-8, 9</p>
+              </div>
+            </div>
+          </div>
+          <div class="form__contact">
+            <h3 class="form__title">Получить консультацию</h3>
+            <p class="form__subtitle">
+              Оставьте заявку и наши специалисты проконсультируют вас по всем
+              интересующим вопросам
+            </p>
+            <form class="text-form">
+              <div class="text-form__wrapper">
+                <div class="text-form__label-wrapper">
+                  <label for="name" class="text-form__label"
+                    >Имя<span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    access="false"
+                    maxlength="30"
+                    id="name"
+                    required="required"
+                    aria-required="true"
+                    class="text-form__input name"
+                  />
+                </div>
+                <div class="text-form__label-wrapper">
+                  <label for="tel" class="text-form__label""
+                    >Телефон<span>*</span></label
+                  >
+                  <input
+                    type="tel"
+                    name="tel"
+                    access="false"
+                    id="tel"
+                    required="required"
+                    aria-required="true"
+                    class="text-form__input tel"
+                  />
+                </div>
+              </div>
+                <button
+                  class="text-form__submit button__blue"
+                  name="submit"
+                  access="false"
+                  id="submit"
+                >
+                  Отправить заявку
+                </button>
+            </form>
+          </div>
+        </div>
+        <div class="form__map"></div>
+      </div>
+    </section>
+    <!--section form end-->
     <footer class="footer">
       <div class="footer__wrapper">@ 2023 Copyrights by TopDom.</div>
     </footer>
-    <!--mobilemenu js-->
-    <script src="/js/mobilemenu.js"></script>
+
     <!--slider js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -771,7 +893,8 @@
       var swiper1 = new Swiper(".smi__swiper", {
         slidesPerView: 3,
         spaceBetween: 25,
-        slideToClickedSlide: true,
+        initialSlide: 0,
+        watchSlidesProgress: true,
         navigation: {
           prevEl: ".smi__swiper-button-prev",
           nextEl: ".smi__swiper-button-next",
@@ -820,6 +943,6 @@
         },
       });
     </script>
-    <script src="/js/spoiler.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
