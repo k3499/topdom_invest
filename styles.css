@@ -828,7 +828,7 @@ body {
 }
 /* section team start*/
 .team__wrapper{
-  padding: 150px 0px 0px;
+  padding: 100px 0px 0px;
 }
 .teamAdmin__swiper{
   display:  none !important;
@@ -1148,32 +1148,39 @@ body {
 }
 
 /* form section */
+.form__wrapper{
+  padding: 50px 0 50px 0;
+}
 .form__head{
   display:flex;
 }
 .form__contact-data{
-  padding: 30px 40px 30px 40px;
+  padding: 30px 40px 30px 0;
   width: 50%;
   box-sizing: border-box;
 }
 .form__contact{
   width: 50%;
+  margin-top: 29px;
+  height: fit-content;
+}
+.form__contact-wrapper{
   border: 1px solid #EBEBEB;
   padding: 30px 40px 30px 40px;
-  border-radius: 10px;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 .form__title{
   font-size: 1.6rem;
   color: #212121;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
 }
 .form__subtitle{
   font-size: 15px;
   line-height: 25px;
   color: #70778B;
-  margin-bottom: 45px;
+  margin: 0 0 32px;
 }
 .text-form__wrapper{
   display: flex;
@@ -1219,11 +1226,18 @@ body {
   border: 1px solid #E4E9F2;
   box-shadow: 0 11px 35px 0 rgba(194,200,213,.32);
   transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
-  margin-bottom: 30px;
-  padding: 20px 25px;
+  margin-bottom: 40px;
+  padding: 38px 25px;
 }
 .form__cont-data-wrap{
   margin-left: 25px;
+}
+.form__cont-data-tel{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin-top: 20px;
+  font-size: 1.1rem;
 }
 .form__cont-data-wrap span{
   color: #70778B;
@@ -1237,9 +1251,30 @@ body {
 }
 .form__cont-data-img{
   border: 1px solid #E5EAF2;
+  background-color: #F9FBFE;
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.form__cont-data-img i{
+  color: var(--blue);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-out;
+}
+.form__cont-data-img:hover{
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  transition: all 0.5s ease-out;
+}
+.form__cont-data-img:hover i{
+  color: #fff;
+  transition: all 0.5s ease-out;
 }
 .form__cont-social{
   display: flex;
@@ -1247,6 +1282,31 @@ body {
   padding: 0;
   margin: 11px 0 0;
   gap: 15px;
+}
+.form__map{
+  position: relative;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+}
+.form__map-data{
+  position: absolute;
+  background: #fff;
+  max-width: 400px;
+  padding: 15px 15px 15px 25px;
+  border-radius: 0 0 10px 0;
+}
+.form__map-data p{
+  margin-bottom: 15px;
+  margin-top: 0;
+  color: #70778B;
+  font-size: 0.9rem;
+}
+.form__map-data p:last-of-type{
+  margin-bottom: 0;
+}
+.fa-location-dot{
+  color: var(--blue);
+  margin-right: 8px;
 }
 .fa-brands{
   color: #b1b6c8;

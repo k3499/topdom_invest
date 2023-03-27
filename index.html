@@ -801,25 +801,47 @@
           <div class="form__contact-data">
             <h3 class="form__title">Контактные данные</h3>
             <div class="form__cont-data">
-              <div class="form__cont-data-img"></div>
+              <div class="form__cont-data-img">
+                <i class="fa-solid fa-phone"></i>
+              </div>
               <div class="form__cont-data-wrap">
                 <span>Телефон</span>
-                <p>+7 800 600 07 87</p>
+                <a class="form__cont-data-tel" href="tel:+78006000787"
+                  >+7 800 600 07 87</a
+                >
               </div>
             </div>
             <div class="form__cont-data">
-              <div class="form__cont-data-img"></div>
+              <div class="form__cont-data-img">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
               <div class="form__cont-data-wrap">
                 <span>Месенджеры</span>
                 <ul class="form__cont-social">
-                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
-                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
-                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-vk"></i></a></li>
-                  <li><a href="" class="form__cont-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                  <li>
+                    <a href="" class="form__cont-link" target="_blank"
+                      ><i class="fa-brands fa-square-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="form__cont-link" target="_blank"
+                      ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="form__cont-link" target="_blank"
+                      ><i class="fa-brands fa-vk"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="form__cont-link" target="_blank"
+                      ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="form__cont-data">
+            <!-- <div class="form__cont-data">
               <div class="form__cont-data-img"></div>
               <div class="form__cont-data-wrap">
                 <span>Адреса офисов</span>
@@ -827,46 +849,47 @@
                 <p>г. Казань, ул. Ризаэтдина Фахретдина, д. 19 (Казанская усадьба)</p>
                 <p>г. Санкт - Петербург, бизнес - центр Обводный, Набережная Обводного канала 92 лит А, Офис 101-8, 9</p>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="form__contact">
             <h3 class="form__title">Получить консультацию</h3>
-            <p class="form__subtitle">
-              Оставьте заявку и наши специалисты проконсультируют вас по всем
-              интересующим вопросам
-            </p>
-            <form class="text-form">
-              <div class="text-form__wrapper">
-                <div class="text-form__label-wrapper">
-                  <label for="name" class="text-form__label"
-                    >Имя<span>*</span></label
-                  >
-                  <input
-                    type="text"
-                    name="name"
-                    access="false"
-                    maxlength="30"
-                    id="name"
-                    required="required"
-                    aria-required="true"
-                    class="text-form__input name"
-                  />
+            <div class="form__contact-wrapper">
+              <p class="form__subtitle">
+                Оставьте заявку и наши специалисты проконсультируют вас по всем
+                интересующим вопросам
+              </p>
+              <form class="text-form">
+                <div class="text-form__wrapper">
+                  <div class="text-form__label-wrapper">
+                    <label for="name" class="text-form__label"
+                      >Имя<span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="name"
+                      access="false"
+                      maxlength="30"
+                      id="name"
+                      required="required"
+                      aria-required="true"
+                      class="text-form__input name"
+                    />
+                  </div>
+                  <div class="text-form__label-wrapper">
+                    <label for="tel" class="text-form__label"
+                      >Телефон<span>*</span></label
+                    >
+                    <input
+                      type="tel"
+                      name="tel"
+                      access="false"
+                      id="tel"
+                      required="required"
+                      aria-required="true"
+                      class="text-form__input tel"
+                    />
+                  </div>
                 </div>
-                <div class="text-form__label-wrapper">
-                  <label for="tel" class="text-form__label""
-                    >Телефон<span>*</span></label
-                  >
-                  <input
-                    type="tel"
-                    name="tel"
-                    access="false"
-                    id="tel"
-                    required="required"
-                    aria-required="true"
-                    class="text-form__input tel"
-                  />
-                </div>
-              </div>
                 <button
                   class="text-form__submit button__blue"
                   name="submit"
@@ -875,10 +898,33 @@
                 >
                   Отправить заявку
                 </button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="form__map"></div>
+        <div class="form__map">
+          <div class="form__map-data">
+            <p>
+              <i class="fa-solid fa-location-dot"></i> г. Москва, Пресненская
+              набережная, 8с1
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> г. Казань, ул. Ризаэтдина
+              Фахретдина, д. 19 (Казанская усадьба)
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> г. Санкт - Петербург,
+              бизнес - центр Обводный, Набережная Обводного канала 92 лит А,
+              Офис 101-8, 9
+            </p>
+          </div>
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3affb010d5347854bdd6be31f6e1fb09c933ee0aa2609c8e739a9ebfff182065&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
       </div>
     </section>
     <!--section form end-->
