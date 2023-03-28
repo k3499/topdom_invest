@@ -841,15 +841,6 @@
                 </ul>
               </div>
             </div>
-            <!-- <div class="form__cont-data">
-              <div class="form__cont-data-img"></div>
-              <div class="form__cont-data-wrap">
-                <span>Адреса офисов</span>
-                <p>г. Москва, Пресненская набережная, 8с1</p>
-                <p>г. Казань, ул. Ризаэтдина Фахретдина, д. 19 (Казанская усадьба)</p>
-                <p>г. Санкт - Петербург, бизнес - центр Обводный, Набережная Обводного канала 92 лит А, Офис 101-8, 9</p>
-              </div>
-            </div> -->
           </div>
           <div class="form__contact">
             <h3 class="form__title">Получить консультацию</h3>
@@ -880,7 +871,7 @@
                       >Телефон<span>*</span></label
                     >
                     <input
-                      type="tel"
+                      type="text"
                       name="tel"
                       access="false"
                       id="tel"
@@ -890,11 +881,26 @@
                     />
                   </div>
                 </div>
+                <label class="b-contain">
+                  <input
+                    type="checkbox"
+                    required="required"
+                    class="text-form__checkbox"
+                  />
+                  <div class="b-input"></div>
+                  <span
+                    >Я соглашаюсь с
+                    <a href="policy.html" target="_blank"
+                      >политикой конфиденциальности</a
+                    ></span
+                  >
+                </label>
                 <button
                   class="text-form__submit button__blue"
                   name="submit"
                   access="false"
                   id="submit"
+                  disabled
                 >
                   Отправить заявку
                 </button>
