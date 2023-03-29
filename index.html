@@ -14,11 +14,6 @@
       rel="stylesheet"
     />
     <title>Инвестиции в поселок. До 30% годовых</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
     <style>
       .smi__swiper-slide {
         display: flex;
@@ -64,15 +59,19 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="#">топ дом инвестиции</a>
+        <a class="header__logo" href="#home">топ дом инвестиции</a>
         <button class="mobile-burger"></button>
         <nav class="menu-holder">
           <ul class="header__menu">
-            <li><a href="" class="header__menu-link">Главная</a></li>
-            <li><a href="" class="header__menu-link">О Нас</a></li>
-            <li><a href="" class="header__menu-link">Особенности</a></li>
-            <li><a href="" class="header__menu-link">Процесс</a></li>
-            <li><a href="" class="header__menu-link">Программы</a></li>
+            <li>
+              <a href="#home" class="header__menu-link">Главная</a>
+            </li>
+            <li><a href="#about" class="header__menu-link">О Нас</a></li>
+            <li><a href="#program" class="header__menu-link">Программы</a></li>
+            <li>
+              <a href="#faq" class="header__menu-link">Ответы на вопросы</a>
+            </li>
+            <li><a href="#contacts" class="header__menu-link">Контакты</a></li>
             <li>
               <a href="tel:+78006000787" class="header__menu-link"
                 >+7 800 600 07 87</a
@@ -83,7 +82,7 @@
       </div>
     </header>
     <!--section head start-->
-    <section class="head">
+    <section class="head" id="home">
       <div class="wrapper head__wrapper">
         <h1 class="head__title">Инвестиции в недвижимость вместе с ТопДом</h1>
         <a href="#consultation" class="head__button button__blue"
@@ -124,7 +123,7 @@
     </section>
     <!--section head end-->
     <!--section about start-->
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper about__wrapper">
         <h2 class="title">О компании ТопДом</h2>
         <p class="subtitle">
@@ -326,9 +325,9 @@
     <!--section smi end-->
 
     <!--section projects start-->
-    <section class="projects">
+    <section class="projects" id="program">
       <div class="wrapper wrapper__projects">
-        <h2 class="title">Поселки в собственности</h2>
+        <h2 class="title">Программы инвестирования</h2>
         <p class="subtitle projects__subtitle">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           officia, omnis suscipit sit tempora excepturi, facilis pariatur iure
@@ -628,7 +627,7 @@
     <!--section team end-->
 
     <!--section answer start-->
-    <section class="answer">
+    <section class="answer" id="faq">
       <div class="wrapper answer__wrapper">
         <h2 class="title answer__title">Популярные вопросы</h2>
         <p class="subtitle answer__subtitle">
@@ -795,7 +794,7 @@
     <!--section social end-->
 
     <!--section form start-->
-    <section class="form">
+    <section class="form" id="contacts">
       <div class="wrapper form__wrapper">
         <div class="form__head">
           <div class="form__contact-data">

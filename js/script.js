@@ -103,8 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const url ="https://dev.salesevolution.ru/pub/source-connector/form-getter.php/topdomkzn/secondsite"
         const formData = new FormData(form);
         const payload = JSON.stringify(Object.fromEntries(formData));
-        //console.log(check.checked)
-        console.log(payload)
         fetch(url, {
             method: 'POST',
             body: payload,
@@ -122,94 +120,18 @@ document.addEventListener('DOMContentLoaded', () => {
 )
 })
 
-// function formValidation(payload){
-//     if(payload.name && payload.tel && check.checked){
-//         console.log("все кул")
-//     }else if(!payload.name){
-//         console.log("имя не кул")
-//     }else if(!payload.tel){
-//         console.log("tel не кул")
-//     }
+//scroll to section
 
-// }
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    const blockID = anchor.getAttribute('href').substr(1)
     
-
-    //const consultBlock = document.getElementById('consultation-thanks')
-
-    
-    // phones.forEach((phone) => {
-    //   phone.addEventListener('input', function (e) {
-    //     const x = e.target.value.replace(/\D/g, '').match(/(\d{0,11})/);
-    //     e.target.value = !x[2] ? x[1] : x[1];
-    //   });
-    // });
-    
-    // hideWhyButton.addEventListener('click', () => {
-    //   whyBlock.style.display = 'none'
-    //   whyForm.style.display = 'block'
-    // })
-    
-    // hideConsultButton.addEventListener('click', () => {
-    //   consultBlock.style.display = 'none'
-    //   consultForm.style.display = 'block'
-    // })
-    
-    
-    // forms.forEach((form) => {
-    //   form.addEventListener('submit', submit)
-    // })
-    
-    // function submit(e) {
-    //   e.preventDefault()
-    //   const form = e.target
-    
-    //   const names = form.querySelectorAll('.name');
-    //   const regex = /[<>&]/
-    //   let isValidData
-    //   let isName = false
-    //   let isPhone = false
-    
-    //   names.forEach(name => {
-    //     if (name.value && !regex.test(name.value)) {
-    //       isName = true
-    //       name.removeAttribute('style')
-    //     } else {
-    //       name.style.borderColor = 'red'
-    //     }
-    //   })
-    //   phones.forEach(phone => {
-    //     if (phone.value && phone.value.length >= 7) {
-    //       isPhone = true
-    //       phone.removeAttribute('style')
-    //     } else {
-    //       phone.style.borderColor = 'red'
-    //     }
-    //   })
-    
-    //   isValidData = isName * isPhone
-    //   console.log(isValidData)
-    
-    //   if (isValidData) {
-    //     const payload = new FormData(form);
-    //     // console.log([...payload]);
-    //     fetch('/blagodarim', {
-    //       method: 'POST',
-    //       body: payload
-    //     })
-    //     // .then(res => res.json())
-    //     .then((data) => {
-    //       console.log(data)
-    //       ym(92719188,'reachGoal','lead_from_form')
-    //     })
-    //     // .then(data => console.log(data))
-    
-    //     form.style.display = 'none'
-    //     form.nextElementSibling.style.display = 'block'
-    //   }
-    // }
-    // })
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  })
+}
