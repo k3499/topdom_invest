@@ -440,7 +440,7 @@ body {
 .head__wrapper {
   background: url(/images/man.png) no-repeat right bottom;
   background-size: 45%;
-  min-height: 1050px;
+  min-height: 100vh;
   position: relative;
 }
 .head__title {
@@ -566,7 +566,8 @@ body {
   font-weight: normal;
 }
 .subtitle {
-  font-size: 21px;
+  font-size: 20px;
+  font-family: 'Formular';
   line-height: 1;
   margin: 0 0 90px;
 }
@@ -1088,8 +1089,8 @@ body {
 .answer__title {
   font-size: 40px;
 }
-.subtitle {
-  font-size: 18px;
+.head__subtitle {
+  font-size: 22px;
 }
 .spoiler{
   display: none;
@@ -1436,9 +1437,9 @@ b-contain *,
 .plan__wrapper{
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 150px 0 0 0;
+  padding: 150px 0 50px 0;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: fit-content
 }
 .title__plan{
   text-align: center;
@@ -1498,8 +1499,39 @@ b-contain *,
 .head__wrapper-poselok {
   background: url(/images/poselok.jpg) no-repeat right 211px;
   background-size: 45%;
-  min-height: 1050px;
+  min-height: 100vh;
   position: relative;
+}
+/*description block*/
+.description__wrapper{
+  min-height: fit-content;
+  padding: 100px 0 50px 0;
+}
+.description__section{
+  display: flex;
+  gap: 60px;
+  margin-bottom: 75px;
+}
+.description__left{
+  width: 50%;
+}
+.description__right{
+  width: 50%;
+}
+.description__img{
+  width: 100%;
+  border-radius: 7px;
+}
+.description__title{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.description__paragraph{
+  font-size: 1.20rem;
+  line-height: 146%;
+  color: #545353;
 }
 /*vertical media*/
 @media (max-height: 900px) {
