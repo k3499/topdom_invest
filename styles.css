@@ -440,7 +440,8 @@ body {
 .head__wrapper {
   background: url(/images/man.png) no-repeat right bottom;
   background-size: 45%;
-  min-height: 100vh;
+  min-height: 1050px;
+  position: relative;
 }
 .head__title {
   line-height: 115%;
@@ -1472,10 +1473,10 @@ b-contain *,
   text-align: center;
   margin: 0 auto;
 }
-.plan__icon-box:hover .plan__icon{
+.plan__item:hover .plan__icon{
   color: #fff;
 }
-.plan__icon-box:hover{
+.plan__item:hover .plan__icon-box{
   background: var(--blue);
 }
 .plan__item-title{
@@ -1491,6 +1492,15 @@ b-contain *,
   color: var(--blue);
   transition: 0.4s;
 }
+.head__title-poselok{
+  font-size: 60px;
+}
+.head__wrapper-poselok {
+  background: url(/images/poselok.jpg) no-repeat right 211px;
+  background-size: 45%;
+  min-height: 1050px;
+  position: relative;
+}
 /*vertical media*/
 @media (max-height: 900px) {
   .head__wrapper {
@@ -1502,12 +1512,20 @@ b-contain *,
     background: url(/images/man.png) no-repeat right 50px bottom;
     background-size: 33%;
   }
+  .head__wrapper-poselok {
+    background: url(/images/poselok.jpg) no-repeat right 211px;
+    background-size: 33%;
+  }
 }
 /*vertical media end*/
 
 
 @media (max-width: 1200px) {
-
+  .head__wrapper-poselok {
+    background: url(/images/poselok.jpg) no-repeat right 20px bottom 30px;
+    background-size: 65%;
+    min-height: 1250px;
+  }
   .wrapper{
     padding: 150px 25px 0;
   }
@@ -1573,6 +1591,13 @@ b-contain *,
   }
 }
 @media (max-width: 940px) {
+  .plan__item {
+    padding: 31px 20px;
+  }
+  .head__wrapper-poselok {
+    background-size: 75%;
+    min-height: 1150px;
+  }
   .head__graph-subtitle {
     font-size: 16px;
   }
@@ -1649,9 +1674,12 @@ b-contain *,
     font-size: 19px;
     margin: 0px 0 40px;
   }
+  .subtitle__plan {
+    margin: 0 auto 40px;
+  }
   .city__list {
     margin: 0px 10px;
-}
+  }
   .about__block {
     flex-direction: column;
   }
@@ -1729,8 +1757,14 @@ b-contain *,
     margin-bottom: 3px;
     font-size: 0.6rem;
   }
+  .title__plan {
+    line-height: 97%;
+  }
 }
 @media (max-width: 640px) {
+  .plan__block {
+    flex-direction: column;
+  }
   .head__title {
     font-size: 26px;
     margin: 60px 0 25px;
@@ -1754,6 +1788,11 @@ b-contain *,
     display: flex;
     flex-direction: column;
   }
+  .head__wrapper-poselok {
+    background: url(/images/poselok.jpg) no-repeat right 20px bottom 30px;
+    background-size: 80%;
+    min-height: 688px !important;
+}
   .wrapper {
     min-height: calc(100vh - 55px);
     padding: 50px 15px 55px;
@@ -1913,5 +1952,8 @@ b-contain *,
   }
   .answer__subtitle {
     text-align: left;
+  }
+  .plan__item-title {
+    line-height: 110%;
   }
 }
