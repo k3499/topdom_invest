@@ -708,12 +708,13 @@ body {
   font-weight: 900;
   content: "\f00c";
   color: var(--blue);
+  margin-right: 20px;
 }
 
 /* section smi start*/
 .smi {
   background: #fff;
-  min-height: 100vh;
+  padding: 0 0 150px;
 }
 .smi__title {
   margin: 0 0 80px;
@@ -731,9 +732,7 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
-
-  height: 496px;
-
+  height: 200px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -911,14 +910,18 @@ body {
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-  padding: 48px 48px;
+  padding: 0;
   align-items: flex-start;
   justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .swiper-slide-title {
-  font-size: 21px;
-  font-weight: bold;
+  padding: 5px 10px;
+  background: var(--blue);
+  font-size: 19px;
+  font-weight: normal;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 1);
 }
@@ -1433,6 +1436,123 @@ b-contain *,
   padding: 150px 0 50px 0;
 }
 
+/*invest plan head*/
+.partners-swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+
+  height: 100%;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.partners-swiper-slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 48px 48px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.partners-swiper-slide-title {
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 768px) {
+  .partners-swiper {
+    width: 100%;
+
+    height: 100%;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .partners-partners-swiper-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .partners-swiper-slide-content {
+    padding: 48px 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-swiper {
+    width: 100%;
+
+    height: 100%;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .partners-swiper-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .partners-swiper-slide-content {
+    padding: 48px 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .partners-swiper {
+    width: 100%;
+
+    height: 100%;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .partners-swiper-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .partners-swiper-slide-content {
+    padding: 48px 48px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .partners-swiper {
+    width: 100%;
+
+    height: 100%;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .partners-swiper-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .partners-swiper-slide-content {
+    padding: 48px 48px;
+  }
+}
 /*invest plan page*/
 .plan__wrapper{
   box-sizing: border-box;
@@ -1458,7 +1578,7 @@ b-contain *,
   text-align: center;
 }
 .plan__item{
-  padding: 40px 50px;
+  padding: 40px 45px;
   border: 1px solid var(--blue);
   border-radius: 20px;
 }
@@ -1483,6 +1603,7 @@ b-contain *,
 .plan__item-title{
   margin-top: 45px;
   font-size: 1.4rem;
+  line-height: 110%;
 }
 .plain__item-subtitle{
   line-height: 140%;
@@ -1495,13 +1616,65 @@ b-contain *,
 }
 .head__title-poselok{
   font-size: 60px;
+  margin: 0 0 30px;
 }
-.head__wrapper-poselok {
-  background: url(/images/poselok.jpg) no-repeat right 211px;
-  background-size: 45%;
+.investplan__button{
+  margin-bottom: 30px;
+}
+.investplan__head{
   min-height: 100vh;
+  height: (100vh - 92px);
+  background: #f7f7f7;
   position: relative;
 }
+.investplan__wrapper{
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  left: 35%;
+  top: 50%;
+  padding: 20px 40px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  height: -webkit-fill-available;
+}
+.investPlan__swiper{
+  height: 100vh;
+}
+.investplan__subtitle{
+  max-width: 554px;
+  font-size: 1.7rem;
+  line-height: 130%;
+  padding: 0;
+  margin: 0 0 40px;
+}
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+
+      background-color: rgba(51, 51, 51, 1);
+
+      border-radius: 0px;
+    }
+
+    .swiper-slide-image {
+      position: absolute;
+      object-fit: cover;
+
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+
+      z-index: 0;
+    }
 /*description block*/
 .description__wrapper{
   min-height: fit-content;

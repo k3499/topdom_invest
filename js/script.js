@@ -122,16 +122,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //scroll to section
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+if(window.location.pathname === '/index.html'){
+    const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'center'
+    console.log(window.location.pathname);
+    for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        const blockID = anchor.getAttribute('href').substr(1)
+        
+        document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+        })
     })
-  })
+    }
 }

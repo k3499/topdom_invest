@@ -18,19 +18,31 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="#home">топ дом инвестиции</a>
+        <a class="header__logo" href="/index.html">топ дом инвестиции</a>
         <button class="mobile-burger"></button>
         <nav class="menu-holder">
           <ul class="header__menu">
             <li>
-              <a href="#home" class="header__menu-link">Главная</a>
+              <a href="/index.html" class="header__menu-link">Главная</a>
             </li>
-            <li><a href="#about" class="header__menu-link">О Нас</a></li>
-            <li><a href="#program" class="header__menu-link">Программы</a></li>
             <li>
-              <a href="#faq" class="header__menu-link">Ответы на вопросы</a>
+              <a href="/index.html#about" class="header__menu-link">О Нас</a>
             </li>
-            <li><a href="#contacts" class="header__menu-link">Контакты</a></li>
+            <li>
+              <a href="/index.html#program" class="header__menu-link"
+                >Программы</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#faq" class="header__menu-link"
+                >Ответы на вопросы</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#contacts" class="header__menu-link"
+                >Контакты</a
+              >
+            </li>
             <li>
               <a href="tel:+78006000787" class="header__menu-link"
                 >+7 800 600 07 87</a
@@ -41,18 +53,37 @@
       </div>
     </header>
     <!--section head start-->
-    <section class="head" id="home">
-      <div class="wrapper head__wrapper head__wrapper-poselok">
+    <section class="investplan__head" id="home">
+      <div class="investplan__wrapper">
         <h1 class="head__title head__title-poselok">
           Инвестирование в инфраструктуру поселков
         </h1>
-        <a href="#consultation" class="head__button button__blue"
+        <a
+          href="#consultation"
+          class="head__button button__blue investplan__button"
           >Получить консультацию</a
         >
-        <p class="head__subtitle">
+        <p class="investplan__subtitle">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque
           consequuntur mollitia aperiam alias veritatis.
         </p>
+      </div>
+      <div class="swiper investPlan__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-slide-image" src="/images/fromtop.jpg" />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="swiper-slide-image"
+              src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
     <!--section plan start-->
@@ -355,6 +386,16 @@
 
     <!--slider js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        autoplay: { enabled: true, delay: 4000 },
+      });
+    </script>
     <script src="/js/script.js"></script>
   </body>
 </html>
