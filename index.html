@@ -85,7 +85,7 @@
     <section class="head" id="home">
       <div class="wrapper head__wrapper">
         <h1 class="head__title">Инвестиции в недвижимость вместе с ТопДом</h1>
-        <a href="#consultation" class="head__button button__blue"
+        <a href="#contacts" class="head__button button__blue"
           >Получить консультацию</a
         >
         <p class="head__subtitle">
@@ -268,17 +268,15 @@
       <div class="swiper smi__swiper">
         <div class="swiper-wrapper">
           <div class="smi__swiper-slide swiper-slide">
-            <div
-              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'"
-            >
-              <img
-                width="100%"
-                src="/images/efir.jpg"
-                style="cursor: pointer"
-              />
-            </div>
+            <img
+              width="100%"
+              src="/images/efir.jpg"
+              style="cursor: pointer"
+              class="efir-smi"
+            />
             <div style="display: none" class="swiper-slide-video">
               <iframe
+                class="efir_video"
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/NskXhNnJOUE"
@@ -1017,7 +1015,10 @@
         </ul>
       </div>
     </footer>
-
+    <div class="litebox__video">
+      <button class="litebox__close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="litebox__video-out"></div>
     <!--slider js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

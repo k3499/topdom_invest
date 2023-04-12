@@ -1628,6 +1628,7 @@ b-contain *,
 }
 .investplan__wrapper{
   position: absolute;
+  min-height: 486px;
   z-index: 10;
   background: #fff;
   left: 35%;
@@ -1752,6 +1753,46 @@ b-contain *,
 .footer__menu-link:hover {
   color: #dddbdb;
 }
+
+/*litebox*/
+.litebox__video-out{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  z-index: 100;
+  opacity: 0.6;
+}
+.litebox__video{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
+  background:#ffffff;
+  z-index: 101;
+  border-radius: 5px;
+}
+.litebox__close{
+  display: none;
+  background: #fff0;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+.litebox__close i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
 /*vertical media*/
 @media (max-height: 900px) {
   .head__wrapper {
@@ -1840,7 +1881,16 @@ b-contain *,
   .form__head {
     margin-bottom: 30px;
   }
+  .footer__menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 9px;
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 940px) {
   .plan__item {
     padding: 31px 20px;
@@ -2013,6 +2063,7 @@ b-contain *,
   }
 }
 @media (max-width: 640px) {
+
   .plan__block {
     flex-direction: column;
   }
@@ -2206,5 +2257,9 @@ b-contain *,
   }
   .plan__item-title {
     line-height: 110%;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 30px;
   }
 }
