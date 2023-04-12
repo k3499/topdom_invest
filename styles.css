@@ -965,6 +965,7 @@ body {
   width: 20%;
   height: 355px;
   position: relative;
+  text-decoration: none;
 }
 .social__logo{
   width: 100px;
@@ -1116,11 +1117,10 @@ body {
   width: calc(50% - 10px);
 }
 .spoiler__link{
-  line-height: 50px;
+  line-height: 22px;
   display: block;
-  height: 50px;
-  font-size: 15px;
   font-weight: normal;
+  padding: 14px 0;
   color: #fff;
   background-color: rgba(255,255,255,0.04);
   font-size: 16px;
