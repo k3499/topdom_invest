@@ -363,7 +363,7 @@ body {
 }
 .header {
   position: fixed;
-  z-index: 100;
+  z-index: 9999999;
   width: 100%;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 7px 0px;
@@ -442,7 +442,7 @@ body {
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 200px 0 0 0;
+  padding: 150px 0 0 0;
   max-width: 1200px;
   min-height: 100vh;
 }
@@ -455,7 +455,7 @@ body {
 .head__title {
   line-height: 115%;
   margin: 0 0 50px;
-  font-size: 64px;
+  font-size: 61px;
   max-width: 554px;
 }
 
@@ -836,7 +836,20 @@ body {
   top: -10px;
   transition: all 0.4s ease 0s;
 }
+/*section roadmap start*/
+.roadmap{
+  padding: 0 0 50px;
+}
+.roadmap__wrapper{
+  min-height: auto;
+}
+.roadmap__title{
+  text-align: center;
+}
 /* section team start*/
+.team{
+  background: #f7f7f7;
+}
 .team__wrapper{
   padding: 100px 0px 0px;
 }
@@ -1630,7 +1643,7 @@ b-contain *,
   position: absolute;
   min-height: 486px;
   z-index: 10;
-  background: #fff;
+  background: #ffffffb0;
   left: 35%;
   top: 50%;
   padding: 20px 40px;
@@ -2291,5 +2304,8 @@ b-contain *,
   }
   .footer__wrapper {
     align-items: flex-start;
+  }
+  .roadmap__wrapper{
+    min-height: fit-content;
   }
 }

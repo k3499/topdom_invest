@@ -151,9 +151,7 @@ videoContainers.forEach((videoBlock) => {
     console.log(videoBlock)
     videoBlock.addEventListener('click', (evt) =>{
         evt.preventDefault();
-
         let liteboxClose = document.querySelector('.litebox__close');
-
 
         if(videoBlock.classList.contains('efir-smi')){
             var youtube = document.querySelector('.efir_video').cloneNode();
@@ -183,42 +181,3 @@ videoContainers.forEach((videoBlock) => {
         videoOut.addEventListener('click', (evt) => liteboxClear() )
     }) 
 })
-
-// efir.addEventListener('click', (evt) =>{
-//     evt.preventDefault();
-//     let liteboxClose = document.querySelector('.litebox__close');
-//     let youtube = document.querySelector('.efir_video');
-
-//     videoWrap.appendChild(youtube);
-
-//     liteboxClose.style.display = 'block';
-//     videoWrap.style.display = 'block';
-//     videoOut.style.display = 'block';
-
-//     console.log(youtube);
-//     liteboxClose.addEventListener('click', (evt) =>{
-//         liteboxClose.style.display = 'none';
-//         videoWrap.style.display = 'none';
-//         videoOut.style.display = 'none';
-//     })
-//     videoOut.addEventListener('click', (evt) =>{
-//         liteboxClose.style.display = 'none';
-//         videoWrap.style.display = 'none';
-//         videoOut.style.display = 'none';
-//     })
-
-
-    // if (liteBox  === "closed"){
-    //     menuContainer.style.display = 'block';
-    //     setTimeout(() => {
-    //         menuContainer.classList.add('fadeIn');
-    //     }, 50);
-    //     menuContainer.style.height = 'fit-content';
-    //     menuStatus  = 'open';
-    // }else if(menuStatus  === "opened"){
-    //         menuContainer.style.display = 'none';
-    //     menuStatus  = 'close';
-    //     menuContainer.classList.remove('fadeIn');
-    // }
-//     console.log(menuStatus)
-// })    
