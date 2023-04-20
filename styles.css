@@ -1807,6 +1807,185 @@ b-contain *,
 .iframe-video{
   border-radius: 5px;
 }
+/*calc section*/
+.calc__box{
+  display: flex;
+  gap: 50px;
+}
+.calc__buttons{
+  width: 20%;
+}
+.calc__money, .calc__time{
+  width: 40%;
+}
+.calc__buttons{
+  display: flex;
+  flex-direction: column;
+}
+.calc__question{
+  margin: 0 0 20px;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 116%;
+  color: #8d8d8d;
+  width: 250px;
+}
+.calc__value{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.calc__button{
+  width: fit-content;
+  padding: 13px 10px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  background: #fff;
+  outline: none;
+  border: 2px solid var(--blue);
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+.calc__button_active{
+  background: var(--blue);
+  color: #fff;
+}
+.calc__range {
+  display: block;
+  margin-top: 0;
+}
+.calc__range {
+  -webkit-appearance: none;
+  padding: 40px 0;
+  width: 100%;
+}
+.calc__range:focus {
+  outline: none;
+}
+.calc__range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: var(--medium-gray);
+  border-radius: 4px;
+}
+.calc__range::-webkit-slider-thumb {
+  margin-top: -36px;
+  height: 80px;
+  width: 30px;
+  background-color: transparent;
+  background-image: url('images/thumb.svg');
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  position: relative;
+  z-index: 1;
+}
+.calc__range:focus::-webkit-slider-runnable-track {
+  background: var(--medium-gray);
+}
+.calc__range::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: var(--medium-gray);
+  border-radius: 4px;
+}
+.calc__range::-moz-range-thumb {
+  margin-top: -36px;
+  height: 80px;
+  width: 20px;
+
+  background-color: transparent;
+  background-image: url('../img/thumb.svg');
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+.calc__range::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.calc__range::-ms-fill-lower {
+  background: var(--medium-gray);
+  border-radius: 4px;
+}
+.calc__range::-ms-fill-upper {
+  background: var(--medium-gray);
+  border-radius: 4px;
+}
+.calc__range::-ms-thumb {
+  margin-top: -36px;
+  height: 80px;
+  width: 20px;
+
+  background-color: transparent;
+  background-image: url('../img/thumb.svg');
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+.calc__range:focus::-ms-fill-lower {
+  background: var(--medium-gray);
+}
+.calc__range:focus::-ms-fill-upper {
+  background: var(--medium-gray);
+}
+
+.calc__range-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.calc__progress-bar {
+  position: absolute;
+  top: 40px;
+  left: 0;
+
+  height: 4px;
+
+  background-color: var(--blue);
+  border-radius: 4px;
+}
+.calc__progress-bar--price {
+  width: 14%;
+}
+.calc__progress-bar--period {
+  width: 0;
+}
+
+.calc__result-value {
+  margin-top: 10px;
+
+  font-family: var(--Formular);
+  font-size: 50px;
+  line-height: 115%;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.calc__result-value::after {
+  content: ' ₽';
+}
 /*vertical media*/
 @media (max-height: 900px) {
   .head__wrapper {
@@ -1821,6 +2000,31 @@ b-contain *,
   .head__wrapper-poselok {
     background: url(/images/poselok.jpg) no-repeat right 211px;
     background-size: 33%;
+  }
+  .head__title {
+    line-height: 110%;
+    margin: 0 0 25px;
+    font-size: 43px;
+}
+  .head__button {
+    margin-bottom: 20px;
+  }
+  .button__blue {
+    padding: 18px 21px;
+  }
+  .head__subtitle {
+    font-size: 1.7rem;
+    line-height: 130%;
+    margin: 0 0 25px;
+  }
+  .projects {
+    padding-bottom: 100px;
+  }
+  .team {
+    padding-bottom: 100px;
+  }
+  .social {
+    padding-bottom: 100px;
   }
 }
 /*vertical media end*/
