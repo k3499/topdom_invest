@@ -187,6 +187,73 @@
     </section>
     <!--section desctiption end-->
 
+    <!--section calc start-->
+    <section class="calc">
+      <div class="wrapper calc__wrapper">
+        <h2 class="title calc__title">Калькулятор инвестирования</h2>
+        <div class="calc__box">
+          <div class="calc__buttons">
+            <button id="button-nal" class="calc__button">Наличные</button>
+            <button id="button-besnal" class="calc__button">Безналичные</button>
+          </div>
+          <div class="calc__right-wrap">
+            <div class="calc__right-head">
+              <div class="calc__money">
+                <h3 class="calc__question">Сколько средств вы готовы вложить?</h3>
+                <span id="price-value1" class="calc__value">3000.000</span>
+                <div class="calc__range-wrap">
+                  <input
+                    id="price1"
+                    type="range"
+                    min="500000"
+                    max="20000000"
+                    step="500000"
+                    value="3000000"
+                    class="calc__range"
+                  />
+                  <div
+                    id="price-progress1"
+                    class="calc__progress-bar calc__progress-bar--price"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="calc__time">
+                <h3 class="calc__question">На какой срок готовы вложить?</h3>
+                <span id="period-value" class="calc__value calc__value--period"
+                  >1</span><span id="year-name-time" class="calc__time-name"> год</span>
+                <div class="calc__range-wrap">
+                  <input
+                    id="period"
+                    type="range"
+                    min="1"
+                    max="5"
+                    step="1"
+                    value="1"
+                    class="calc__range"
+                  />
+                  <div
+                    id="period-progress"
+                    class="calc__progress-bar calc__progress-bar--period"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__result">
+              <div class="calc__result-text">
+                Ваша сумма за
+                <span id="end-year" class="calc__end-year">1</span>
+                <span id="year-name">год:</span>
+              </div>
+              <span id="profit1" class="calc__result-value">3.600.000</span>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <!--section calc end-->
+
     <!--section social start-->
     <section class="social">
       <div class="wrapper social__wrapper">
@@ -413,7 +480,6 @@
         </ul>
       </div>
     </footer>
-
     <!--slider js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -426,7 +492,6 @@
         autoplay: { enabled: true, delay: 4000 },
       });
     </script>
-    <script src="/js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
@@ -531,5 +596,7 @@
         });
       });
     </script>
+    <script src="/js/calc.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

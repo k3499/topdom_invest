@@ -442,69 +442,6 @@
     </section>
     <!--section roadmap end-->
 
-    <!--section calc start-->
-    <section class="calc">
-      <div class="wrapper calc__wrapper">
-        <h2 class="title calc__title">Калькулятор инвестирования</h2>
-        <div class="calc__box">
-          <div class="calc__buttons">
-            <button id="button-nal" class="calc__button">Наличные</button>
-            <button id="button-besnal" class="calc__button">Безналичные</button>
-          </div>
-          <div class="calc__money">
-            <h3 class="calc__question">Сколько средств вы готовы вложить?</h3>
-            <span id="price-value1" class="calc__value">3000.000</span>
-            <div class="calc__range-wrap">
-              <input
-                id="price1"
-                type="range"
-                min="500000"
-                max="20000000"
-                step="500000"
-                value="3000000"
-                class="calc__range"
-              />
-              <div
-                id="price-progress1"
-                class="calc__progress-bar calc__progress-bar--price"
-              ></div>
-            </div>
-          </div>
-
-          <div class="calc__time">
-            <h3 class="calc__question">На какой срок готовы вложить?</h3>
-            <span id="period-value" class="calc__value calc__value--period"
-              >1</span
-            >
-            <div class="calc__range-wrap">
-              <input
-                id="period"
-                type="range"
-                min="1"
-                max="5"
-                step="1"
-                value="1"
-                class="calc__range"
-              />
-              <div
-                id="period-progress"
-                class="calc__progress-bar calc__progress-bar--period"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div class="calc__result">
-          <div class="calc__result-text">
-            Ваша сумма за
-            <span id="end-year" class="calc__end-year">1</span>
-            <span id="year-name">год:</span>
-          </div>
-          <span id="profit1" class="calc__result-value">3.600.000</span>
-        </div>
-      </div>
-    </section>
-    <!--section calcul end-->
-
     <!--section team start-->
     <section class="team">
       <div class="wrapper team__wrapper">
@@ -1116,7 +1053,7 @@
             slidesPerView: 3,
           },
         },
-      });
+      })
 
       var swiper2 = new Swiper(".team__swiper", {
         slidesPerView: 3,
@@ -1139,7 +1076,7 @@
             slidesPerView: 3,
           },
         },
-      });
+      })
 
       var swiper3 = new Swiper(".teamAdmin__swiper", {
         loop: true,
@@ -1147,8 +1084,10 @@
           prevEl: ".teama__swiper-button-prev",
           nextEl: ".teama__swiper-button-next",
         },
-      });
+      })
     </script>
+    <script src="/js/calc.js"></script>
+    <script src="/js/lightbox.js"></script>
     <script src="/js/script.js"></script>
     <!-- Include jQuery -->
     <script
@@ -1242,7 +1181,7 @@
             content:
               "Lorem ipsum dolor sit amet<small>Consectetur adipisicing elit</small>",
           },
-        ];
+        ]
 
         $("#my-roadmap").roadmap(events, {
           eventsPerSlide: 6,
@@ -1250,10 +1189,10 @@
           prevArrow: '<i class="fa-solid fa-chevron-left"></i>',
           nextArrow: '<i class="fa-solid fa-chevron-right"></i>',
           onBuild: function () {
-            console.log("onBuild event");
+            console.log("onBuild event")
           },
-        });
-      });
+        })
+      })
     </script>
   </body>
 </html>
